@@ -1,7 +1,11 @@
 #!/bin/bash
 # bash run_mcts_dpo.sh 2>&1 | tee log.txt
 
-output_dir="path_to_save"
+model_path="path_to_model"
+data_path="path_to_data"
+save_buffer_path="path_to_buffer"
+save_perfer_data_path="path_to_perfer_data"
+output_dir="path_to_output"
 
 # 如果路径不存在，则运行 python main.py
 python main.py --model_path $model_path \
