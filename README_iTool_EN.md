@@ -7,7 +7,7 @@ Summary: We extend LLaMA-Factory with customizations for Agent / MCTS training a
 - ## Structure & Key Files
 - `mcts/` — Core changes for this paper: MCTS, DPO training logic and helper scripts.
 - `mcts/run_mcts_dpo.sh` — Main script to start experiments (intended for Linux / WSL / Git Bash).
-- `src/` — The LLaMA-Factory core package (`llamafactory`); training/inference/API/WEB UI entry points are `src/train.py`, `src/api.py`, and `src/webui.py`.
+- `src/` — The LLaMA-Factory core package (`llamafactory`).
 - `scripts/cal_ppl.py` — Compute model perplexity (PPL) on a dataset.
 
 ## Quick Start (Developer)
@@ -24,7 +24,7 @@ pip install -e ."[torch,metrics]"
 
 ```powershell
 # From Git Bash or WSL, run:
-bash mcts/mcts/run_mcts_dpo.sh
+bash mcts/run_mcts_dpo.sh
 ```
 
 3. The script will start the training/evaluation workflow using parameters defined under `mcts`. For step-by-step debugging, open the script to inspect the invoked Python commands and environment variables, then run the corresponding Python modules directly (for example: `python -m mcts.main`).

@@ -7,7 +7,7 @@
 ## 目录与关键文件
 - `mcts/` — 论文中大多数改动所在，包含 MCTS、DPO 训练逻辑与相关实用脚本。
 - `mcts/run_mcts_dpo.sh` — 启动实验的主脚本（在 Linux / WSL / Git Bash 下运行）。
-- `src/` — 来自 LLaMA-Factory 的核心包（`llamafactory`）；训练/推理/API/WEB UI 的入口位于 `src/train.py`, `src/api.py`, `src/webui.py`。
+- `src/` — 来自 LLaMA-Factory 的核心包（`llamafactory`）。
 - `scripts/cal_ppl.py` — 计算模型在数据集上的 perplexity（PPL）。
 
 ## 快速开始（开发者环境）
@@ -24,7 +24,7 @@ pip install -e ."[torch,metrics]"
 
 ```powershell
 # 使用 Git Bash 或 WSL 进入仓库根目录，然后：
-bash mcts/mcts/run_mcts_dpo.sh
+bash mcts/run_mcts_dpo.sh
 ```
 
 3. 脚本会根据 `mcts` 内的参数启动训练/评估流程。若需要在本地逐步调试，可打开脚本并查看传入的 Python 命令与环境变量，然后直接运行对应的 Python 模块（例如通过 `python -m mcts.main` 形式运行）。
