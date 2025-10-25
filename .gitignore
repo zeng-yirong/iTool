@@ -167,3 +167,4 @@ config/
 saves/
 output/
 wandb/
+.github/copilot-instructions.md
