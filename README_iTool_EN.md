@@ -44,6 +44,14 @@ If this work is useful to you, please cite the paper. Recommended BibTeX entry:
   journal={arXiv preprint arXiv:2501.09766},
   year={2025}
 }
+
+@article{zeng2025boosting,
+  title={Boosting tool use of large language models via iterative reinforced fine-tuning},
+  author={Zeng, Yirong and Ding, Xiao and Wang, Yuxian and Liu, Weiwen and Ning, Wu and Hou, Yutai and Huang, Xu and Qin, Bing and Liu, Ting},
+  journal={arXiv e-prints},
+  pages={arXiv--2501},
+  year={2025}
+}
 ```
 
 Acknowledgement: This project builds on LLaMA-Factory — please acknowledge it when appropriate.
