@@ -2,10 +2,10 @@
 
 This repository contains the code for the paper "iTool: Reinforced Fine-Tuning with Dynamic Deficiency Calibration for Advanced Tool Use", built on top of LLaMA-Factory.
 
-Summary: We extend LLaMA-Factory with customizations for Agent / MCTS training and DPO training. Most modifications live under the `mcts/` directory. The repository includes a script to run the MCTS + DPO experiments: `mcts/run_mcts_dpo.sh`.
+Summary: We extend LLaMA-Factory with customizations for Agent / MCTS training and DPO training. Most modifications live under the `mcts/` directory. The repository includes a script to run the iTool experiments: `mcts/run_mcts_dpo.sh`.
 
 - ## Structure & Key Files
-- `mcts/` — Core changes for this paper: MCTS, DPO training logic and helper scripts.
+- `mcts/` — Core code for this paper: MCTS, DPO training logic and helper scripts.
 - `mcts/run_mcts_dpo.sh` — Main script to start experiments (intended for Linux / WSL / Git Bash).
 - `src/` — The LLaMA-Factory core package (`llamafactory`).
 - `scripts/cal_ppl.py` — Compute model perplexity (PPL) on a dataset.
