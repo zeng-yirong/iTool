@@ -168,3 +168,5 @@ saves/
 output/
 wandb/
 .github/copilot-instructions.md
+.gitignore
+.gitattributes
